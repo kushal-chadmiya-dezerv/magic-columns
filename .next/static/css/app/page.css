@@ -1,0 +1,555 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/components/styles.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+/* Table Container */
+.table-container {
+  position: relative;
+  min-width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Hide scrollbars in Chrome, Safari and Opera */
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Table Base */
+table {
+  margin-bottom: 0 !important;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: max-content;
+  min-width: 100%;
+}
+
+/* Cell Styles */
+td,
+th {
+  white-space: nowrap;
+  padding: 12px 16px !important;
+  font-size: 14px !important;
+}
+
+/* Header Styles */
+.sticky-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 10;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.sticky-header th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #f7fafc;
+  z-index: 11;
+}
+
+/* Sticky Columns */
+.sticky-cell {
+  position: -webkit-sticky;
+  position: sticky;
+  background: #ffffff;
+  z-index: 2;
+  border-right: 1px solid #e2e8f0;
+}
+
+.sticky-cell:first-child {
+  left: 0;
+  z-index: 3;
+}
+
+th.sticky-cell {
+  z-index: 12;
+  background: #f7fafc;
+}
+
+th.sticky-cell:first-child {
+  z-index: 13;
+}
+
+/* Row Styles */
+.table-row {
+  transition: background-color 0.2s ease;
+}
+
+.table-row:hover td {
+  background-color: #edf2f7;
+}
+
+/* Answer Container Styles */
+.answer-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.answer-container span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1 1;
+}
+
+.answer-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.answer-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  color: #718096;
+  font-size: 16px;
+  cursor: help;
+}
+
+/* Dynamic columns */
+.dynamic-column {
+  width: auto;
+}
+
+/* Name cell styling */
+.name-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.name-domain-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.domain-link {
+  font-size: 12px;
+  color: #718096;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.domain-link:hover {
+  color: #4a5568;
+  text-decoration: underline;
+}
+
+/* Open URL button styling */
+.open-url-button {
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease !important;
+  color: #718096 !important;
+  padding: 4px !important;
+  height: auto !important;
+  min-width: auto !important;
+  margin-left: auto !important;
+}
+
+.open-url-button:hover {
+  color: #4a5568 !important;
+  background-color: #edf2f7 !important;
+}
+
+/* Show button on row hover */
+.table-row:hover .open-url-button {
+  opacity: 1;
+}
+
+/* Ensure proper alignment in sticky cells */
+.sticky-cell .name-cell {
+  max-width: calc(100% - 16px);
+}
+
+/* Adjust icon size */
+.open-url-button svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* LinkedIn button styling */
+.linkedin-button {
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease !important;
+  color: #0077b5 !important;
+  padding: 4px !important;
+  height: auto !important;
+  min-width: auto !important;
+  margin-left: auto !important;
+}
+
+.linkedin-button:hover {
+  color: #006097 !important;
+  background-color: #edf2f7 !important;
+}
+
+/* Show button on row hover */
+.table-row:hover .linkedin-button {
+  opacity: 1;
+}
+
+/* Signal cell styling */
+.signal-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.signal-cell span {
+  flex: 1 1;
+}
+
+/* Copy link button styling */
+.copy-link-button {
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease !important;
+  color: #718096 !important;
+  padding: 4px !important;
+  height: auto !important;
+  min-width: auto !important;
+}
+
+.copy-link-button:hover {
+  color: #4a5568 !important;
+  background-color: #edf2f7 !important;
+}
+
+/* Signal button styling */
+.signal-button {
+  opacity: 0;
+  transition: opacity 0.2s ease, color 0.2s ease !important;
+  color: #718096 !important;
+  padding: 4px !important;
+  height: auto !important;
+  min-width: auto !important;
+}
+
+.signal-button:hover {
+  color: #4a5568 !important;
+  background-color: #edf2f7 !important;
+}
+
+/* Show buttons on row hover */
+.table-row:hover .copy-link-button,
+.table-row:hover .signal-button {
+  opacity: 1;
+}
+
+/* Loading Animation Styles */
+.loading-answer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.info-icon.loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* Skeleton Animation */
+.chakra-skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(211, 216, 232, 0.2) 25%,
+    rgba(211, 216, 232, 0.24) 37%,
+    rgba(211, 216, 232, 0.2) 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* Empty state styling */
+.text-gray-400 {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+/* Custom Toast Styles */
+.chakra-toast__container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.chakra-toast {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  width: 100% !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  background: #fff !important;
+}
+
+.chakra-toast__inner {
+  padding: 12px 16px !important;
+  border-radius: 6px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2px !important;
+}
+
+.chakra-toast__title {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.chakra-toast__description {
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  margin: 0 !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.01em !important;
+}
+
+/* Status Colors */
+.chakra-toast[data-status="success"] .chakra-toast__inner {
+  background-color: #2f855a !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.chakra-toast[data-status="error"] .chakra-toast__inner {
+  background-color: #e53e3e !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.chakra-toast[data-status="warning"] .chakra-toast__inner {
+  background-color: #c05621 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Close Button */
+.chakra-toast button.chakra-close-button {
+  position: absolute !important;
+  top: 12px !important;
+  right: 12px !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  opacity: 0.8 !important;
+  transition: opacity 0.15s ease !important;
+  padding: 4px !important;
+}
+
+.chakra-toast button.chakra-close-button:hover {
+  opacity: 1 !important;
+  background: transparent !important;
+}
+
+/* Toast Animation */
+.chakra-toast {
+  animation: toast-slide-in 0.15s ease-out !important;
+}
+
+@keyframes toast-slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Input and Select styles */
+.chakra-input,
+.chakra-select,
+.chakra-number-input__field {
+  font-size: 14px !important;
+  height: 32px !important;
+  border-color: #e2e8f0 !important;
+}
+
+.chakra-input:focus,
+.chakra-select:focus,
+.chakra-number-input__field:focus {
+  border-color: #3182ce !important;
+  box-shadow: 0 0 0 1px #3182ce !important;
+}
+
+/* Modal Styles */
+.chakra-modal__content {
+  margin: 16px;
+}
+
+.chakra-modal__body {
+  padding: 16px !important;
+}
+
+.chakra-modal__header {
+  padding: 16px !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+/* Table in Modal */
+.chakra-modal__body .chakra-table {
+  width: 100%;
+}
+
+.chakra-modal__body th {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #4a5568;
+}
+
+.chakra-modal__body td {
+  font-size: 14px;
+  padding: 12px 16px;
+}
+
+/* Links in Modal */
+.chakra-modal__body .chakra-link {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.chakra-modal__body .chakra-link:hover {
+  text-decoration: underline;
+}
+
+/* Column header hover styles */
+th[role="columnheader"] {
+  transition: background-color 0.2s;
+}
+
+th[role="columnheader"]:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Answer cell styling */
+.answer-cell {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+}
+
+.answer-text {
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.info-icon-container {
+  display: flex;
+  align-items: center;
+  color: #718096;
+  cursor: help;
+  flex-shrink: 0;
+}
+
+.info-icon-container svg {
+  width: 16px;
+  height: 16px;
+}
+
+.answer-cell {
+  min-width: 0;
+  gap: 8px;
+}
+
+.answer-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.answer-cell svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.column-header-delete {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+th:hover .column-header-delete {
+  opacity: 1;
+}
+
+.column-header-delete:hover {
+  color: #e53e3e;
+}
+
+/* Status Pills */
+.status-pill {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-pill.approved {
+  background-color: #c6f6d5;
+  color: #2f855a;
+}
+
+.status-pill.rejected {
+  background-color: #fed7d7;
+  color: #e53e3e;
+}
+
+.status-pill.pending {
+  background-color: #feebc8;
+  color: #c05621;
+}
+
